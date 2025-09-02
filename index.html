@@ -103,6 +103,20 @@
       
       const PROJECTS = [
         {
+          title: "RescueVision: AI-Powered Search & Rescue Command Center",
+          summary: "An end-to-end system for after-action review of SAR operations, fusing a custom YOLOv8 model for survivor detection with a RAG-powered AI assistant grounded in official FEMA manuals.",
+          image: "/assets/images/portfolio/rescue-vision.png", // <-- Make sure you've added this image!
+          highlights: [
+            "Developed an 'Event Reviewer' workflow for pixel-perfect, static bounding box analysis of video.",
+            "Trained a custom YOLOv8n model achieving 85.3% Precision and 0.833 mAP50 on aerial imagery.",
+            "Built an authoritative RAG assistant using LangChain, grounded in official FEMA SAR manuals.",
+            "Engineered a full microservices architecture with Flask AI backends and a React/TypeScript frontend."
+          ],
+          techStack: [TECH.REACT, TECH.TYPESCRIPT, TECH.PYTHON, TECH.PYTORCH, TECH.LANGCHAIN, TECH.FLASK],
+          liveDemoUrl: null, // This project doesn't have a live demo link
+          sourceCodeUrl: "https://github.com/MdEhsanulHaqueKanan/RescueVision-AI-Backend",
+        },      
+        {
           title: "AuraScanAI: Vehicle Damage Assessment System",
           summary: "An advanced, end-to-end computer vision project that demonstrates a full MLOps lifecycle for damage assessment, featuring a custom-trained Vision Transformer model and a stunning, data-driven React frontend.",
           image: "/assets/images/portfolio/aurascan-ai.png", 
@@ -470,8 +484,7 @@
                   <EmailIcon className="w-8 h-8" />
                 </a>
               </div>
-
-              
+            
             </div>
           </section>
         );
